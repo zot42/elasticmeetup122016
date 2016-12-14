@@ -1,9 +1,9 @@
 [
   {
-    "_id": "Connections-per-Tagserve",
+    "_id": "Connections-per-Backend",
     "_type": "visualization",
     "_source": {
-      "title": "Connections per Tagserve",
+      "title": "Connections per Backend",
       "visState": "{\"title\":\"Connections per Tagserve\",\"type\":\"line\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"defaultYExtents\":false,\"drawLinesBetweenPoints\":false,\"interpolate\":\"linear\",\"legendPosition\":\"right\",\"radiusRatio\":9,\"scale\":\"linear\",\"setYExtents\":false,\"shareYAxis\":true,\"showCircles\":true,\"smoothLines\":false,\"times\":[],\"yAxis\":{}},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"@timestamp\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"1\",\"enabled\":true,\"type\":\"median\",\"schema\":\"metric\",\"params\":{\"field\":\"haproxy_stats.rate\",\"percents\":[50]}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"haproxy_stats.svname\",\"exclude\":{\"pattern\":\"(FRONT|BACK)END\"},\"size\":70,\"order\":\"desc\",\"orderBy\":\"1.50\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"radius\",\"params\":{\"field\":\"haproxy_stats.scur\"}}],\"listeners\":{}}",
       "uiStateJSON": "{}",
       "description": "",
