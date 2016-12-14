@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "Bytes-out-per-Backend",
+    "_type": "visualization",
+    "_source": {
+      "title": "Bytes out per Backend",
+      "visState": "{\"type\":\"timelion\",\"title\":\"Bytes out per Backend\",\"params\":{\"expression\":\".es(*,split='haproxy_stats.pxname:10',metric='avg:haproxy_stats.bout').derivative().label(label='$1 ',regex='.*pxname:(.*?)\\\\s.*$').precision(0).max(0)\",\"interval\":\"auto\"}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    }
+  }
+]
